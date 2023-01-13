@@ -488,6 +488,10 @@ func (c *AVCodecContext) TimeBase() AVRational {
 	return AVRational(c.time_base)
 }
 
+func (c *AVCodecContext) SetTimeBase(timeBase AVRational) {
+	*c.time_base = C.struct_AVRational(timeBase)
+}
+
 func (c *AVCodecContext) Width() int {
 	return int(c.width)
 }

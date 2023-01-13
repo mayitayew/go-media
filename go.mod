@@ -1,4 +1,4 @@
-module github.com/mutablelogic/go-media
+module github.com/mayitayew/go-media
 
 go 1.18
 
